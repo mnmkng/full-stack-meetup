@@ -1,7 +1,7 @@
 /**
  * Only true and battle hardened `Contenders` may enter the {@link Arena}.
  *
- * @oaram {String} name Name of the `Contender`.
+ * @param {String} name Name of the `Contender`.
  * @param {Number} strength Strength points.
  * @param {Number} armor Armor points.
  * @param {Number} health Health points.
