@@ -1,6 +1,8 @@
 /**
  * This example represents a fight between Batman and Joker,
  * two ancient rivals.
+ *
+ * See [`Arena`](../api/arena) and [`Contender`](../api/contender).
  */
 
 const Arena = require('./src/arena');

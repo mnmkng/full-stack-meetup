@@ -11,3 +11,7 @@ the fixes using some RegExp replacements.
 
 Visit `stage3.js` to see the implementation.
 
+After running it and starting up Docusaurus again, (or just live-reloading)
+you should see the titles, links and descriptions fixed
+and the Kind annotation removed.
+
