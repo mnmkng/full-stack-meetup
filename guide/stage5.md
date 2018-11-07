@@ -23,10 +23,10 @@ highlight: {
 It's also an important place for deployment. To successfully publish the site,
 we need to change the following properties:
 
-`projectName`: the name of the project. For me, it's `full-stack-meetup`.
-`organizationName`: this will be your GitHub username. I will use `mnmkng`.
-`url`: `https://mnmkng.github.io` for this project.
-`baseUrl`: `/full-stack-meetup/` for this project.
+   * `projectName`: the name of the project. For me, it's `full-stack-meetup`.
+   * `organizationName`: this will be your GitHub username. I will use `mnmkng`.
+   * `url`: `https://mnmkng.github.io` for this project.
+   * `baseUrl`: `/full-stack-meetup/` for this project.
 
 Once set up, execute the following script, replacing the ENV_VARS as necessary:
 
