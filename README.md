@@ -6,7 +6,7 @@ instead of shipping actual application features. Fortunately, there are ways
 to avoid most of the hassle. With a combination of JSDoc, Markdown
 and Docusaurus, you can have a stunning documentation website up and running in no time.
 
-##Reference:
+## Reference:
 
    * [Docusaurus](https://docusaurus.io/)
    * [JSDoc](http://usejsdoc.org/)
