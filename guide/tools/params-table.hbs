@@ -1,0 +1,39 @@
+{{!--
+This is an override of the original jsdoc-to-markdown original Parameter Table template.
+If you want to understand it, check out Handlebars.js https://handlebarsjs.com/
+and DMD https://github.com/jsdoc2md/dmd
+
+We're using this in the
+```
+jsdoc2md.renderSync({
+  partials: 'PATH'
+})
+```
+
+invocation. It's important to keep the filename the same as the original partial
+you want to replace.
+
+Quick note: Whitespace matters, that's why all the HTML indentation is removed.
+ --}}
+
+{{#if params ~}}
+<table>
+<thead>
+<tr>
+{{#each (tableHeadHtml params "name|Param" "type|Type" "defaultvalue|Default")}}<th>{{this}}</th>{{/each}}
+</tr>
+</thead>
+<tbody>
+{{#tableRow params "name" "type" "defaultvalue" "description" ~}}
+<tr>
+{{#if @col1}}<td><code>{{>param-table-name}}</code></td>{{/if~}}
+{{#if @col2}}<td>{{>linked-type-list types=type.names delimiter=" | " html=true}}</td>{{/if~}}
+{{#if @col3}}<td>{{>defaultvalue}}</td>{{/if}}
+</tr>
+<tr>
+{{#if @col4}}<td colspan="3">{{{md (inlineLinks description)}}}</td>{{/if~}}
+</tr>
+{{~/tableRow}}
+</tbody>
+</table>
+{{/if~}}
